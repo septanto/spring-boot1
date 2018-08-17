@@ -40,10 +40,10 @@ public class BasicControllerTest {
 
     @Test
     public void welcomeWithParameter() throws Exception {
-        mvc.perform(MockMvcRequestBuilders.get("welcome-with-parameter/name/Buddy")
+        mvc.perform(MockMvcRequestBuilders.get("/welcome-with-parameter/name/Buddy")
         .accept(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
-                .andExpect(content().string(containsString("Hello World, Buddy")));
+                .andExpect(content().string(containsString("Hello World, Buddy!")));
     }
 
 }
