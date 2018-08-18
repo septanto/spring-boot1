@@ -2,7 +2,7 @@ package com.mastering.spring.springboot.test;
 
 import com.mastering.spring.springboot.bean.Todo;
 import com.mastering.spring.springboot.bean.TodoController;
-import com.mastering.spring.springboot.service.TodoService;
+import com.mastering.spring.springboot.bean.TodoService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.skyscreamer.jsonassert.JSONAssert;

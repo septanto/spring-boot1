@@ -1,4 +1,4 @@
-package com.mastering.spring.springboot.service;
+package com.mastering.spring.springboot.bean;
 
 import com.mastering.spring.springboot.bean.Todo;
 import org.springframework.stereotype.Service;
