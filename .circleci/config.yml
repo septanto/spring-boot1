@@ -43,4 +43,4 @@ jobs:
         path: target/surefire-reports
 
     - store_artifacts: # store the uberjar as an artifact
-        path: target/firstspringbootapp-0.0.1-SNAPSHOT.jar
+        path: target/firstspringbootapp-0.0.1-SNAPSHOT.war

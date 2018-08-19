@@ -2,6 +2,7 @@ package com.mastering.spring.springboot.bean;
 
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.hateoas.Resource;
 import org.springframework.hateoas.mvc.ControllerLinkBuilder;
 import org.springframework.http.ResponseEntity;
@@ -34,6 +35,7 @@ public class TodoController {
             produces = "application/json"
     )
     @GetMapping("/users/{name}/todos")
+    @Cacheable(cacheNames = "todos", condition = "#name.length() < 10")
     public List<Todo> retrieveTodos(@PathVariable String name) {
         return todoService.retrieveTodos(name);
     }

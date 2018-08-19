@@ -29,7 +29,7 @@ import java.util.Date;
 import java.util.List;
 
 @RunWith(SpringRunner.class)
-@WebMvcTest(TodoController.class)
+@WebMvcTest(value = TodoController.class, secure = false)
 public class TodoControllerTest {
 
     @Autowired
